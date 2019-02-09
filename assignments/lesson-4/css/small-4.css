@@ -1,0 +1,30 @@
+/* color: #4169E1 #A9A9A9 #6495ED #778899 */
+
+*{
+    margin: 0;
+}
+
+header{  
+    width: 320px;
+    height: 90px;
+    background: #4169e1;
+    color: #ffffff;
+}
+
+header h1{
+    position: absolute;
+    top: 20px;
+    left: 5px;
+}
+
+.motto{
+    position: absolute;
+    top: 55px;
+    left: 5px;
+    color: #A9A9A9;
+}
+
+nav{
+    width: 320px;
+    background: #6495ED;
+}
