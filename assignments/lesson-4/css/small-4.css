@@ -28,3 +28,9 @@ nav{
     width: 320px;
     background: #6495ED;
 }
+
+a:link{ color: lightblue;}
+a:visited{ color: rgb(72, 72, 199);}
+a:focus{ color: aqua;}
+a:hover{ color: aqua; background: lightblue;}
+a:active{ color: rgb(72, 72, 199); background: rgb(142, 172, 228);}
