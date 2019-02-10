@@ -29,6 +29,12 @@ nav{
     background: #6495ED;
 }
 
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 a:link{ color: lightblue;}
 a:visited{ color: rgb(72, 72, 199);}
 a:focus{ color: aqua;}
