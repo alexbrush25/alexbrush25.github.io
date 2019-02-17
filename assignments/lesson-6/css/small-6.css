@@ -1,0 +1,100 @@
+/* color: #4169E1 #A9A9A9 #6495ED #778899 */
+
+*{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    background: #4169e1;
+    color: #ffffff;
+}
+
+header h1{
+    display: block;
+    position: relative;
+    top: 35px;
+    left: 10%;
+}
+
+header img{
+    display: block;
+    position: relative;
+    width: 20%;
+    left: 70%;
+    bottom: 15px;
+}
+
+.motto{
+    display: block;
+    position: relative;
+    bottom: 65px;
+    left: 13%;
+    color: #A9A9A9;
+}
+
+nav{
+    width: 100%;
+    background: #6495ED;
+    
+}
+
+nav button{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+nav button:hover{
+    color: black;
+    background: lightblue;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul.hide{
+    display: none;
+}
+
+nav li a{
+    display: block;
+    color: lightblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+nav li a:hover{
+    color: black;
+    background: lightblue;
+}
+
+
+nav li a.active{
+    background: aqua;
+    color: black;    
+}
+
+
+main picture.hero img{
+    width: 100%;
+}
+
+
+.article{
+    margin: 5px;
+    padding: 5px;
+}
+
+
+.contact{
+    margin: 5px;
+    padding: 5px;
+}
