@@ -1,0 +1,126 @@
+/* color: #4169E1 #A9A9A9 #6495ED #778899 */
+
+*{
+    margin: 0;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #4169e1;
+}
+
+
+header h1{
+    top: 20px;
+    color: #ffffff;
+}
+
+
+
+.motto{
+    bottom: 1px;
+    color: #A9A9A9;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+nav button{
+    display: none;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6495ED;
+}
+
+nav ul.hide{
+    display: block;
+}
+
+nav li{
+    float: left;
+    border-right: 1px black;
+}
+
+
+nav li a{
+    display: block;
+    color: lightblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+nav li a:hover{
+    color: black;
+    background: lightblue;
+}
+
+
+nav li a.active{
+    background: aqua;
+    color: black;    
+}
+
+
+
+
+main .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.gallery img{
+    width: 400px;
+}
+
+
+
+
+main picture.hero img{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+
+.article{
+    margin: 5px;
+    padding: 5px;
+}
+
+
+.contact{
+    margin: 5px;
+    padding: 5px;
+}
+
+
+form{
+    margin: 10px;
+    padding: 5px;
+}
+
+
+#thanks{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}

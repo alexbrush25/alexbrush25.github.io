@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum scale=1">
+        
+        <title>Weathario</title>
+        
+        <meta name="description" content="Preston town page and weather service.">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" media="(max-width: 640px)" href="css/small-7.css">
+        <link rel="stylesheet" media="(min-width: 641px)" href="css/large-7.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Weathario</h1>
+            <img src="images/weathario-logo.png" alt="Weathario Logo">
+            <div class= motto>Now you're a Weather Wizard!</div>
+        </header>
+        <main>
+            
+            <nav>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+    
+                    <li><a href="preston-7.html">Home</a></li>
+                    <li><a href="Location">Preston</a></li>
+                    <li><a href="Location">Soda Springs</a></li>
+                    <li><a href="Location">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-7.html">Gallery</a></li>
+
+                </ul>
+            </nav>
+            
+            <form action="thanks.html">
+                Full Name:<br>
+                <input type="text" name="fullname" pattern="[A-Za-z]*" minlength="5" required><br><br>
+
+                Email:<br>
+                <input type="email" name="email" placeholder="email123@mail.com"><br><br>
+
+                Phone number:<br>
+                <input type="tel" name="phoneNumber" required><br><br>
+
+                Zip code:<br>
+                <input type="number" name="zipCode" required><br><br>
+
+                Storm date:<br>
+                <input type="date" name="stormDate"><br><br>
+
+                Storm type:<br>
+                <input list="stormtypes" id="stormList" name="stormType">
+                <datalist id="stormtypes">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist><br><br>
+
+                Storm severity:<br>
+                <input type="range" id="severity" name="stormSeverity" min="1" max="10"><br><br>
+
+                Storm region:<br>
+                <select name="stormRegion">
+                    <option value="first" disabled>Select Region...</option>
+                    <option value="preston">Preston</option>
+                    <option value="sodaSprings">Soda Springs</option>
+                    <option value="fishHaven">Fish Haven</option>
+                </select><br><br>
+
+                User in-danger?<br>
+                <input type="radio" name="inDanger" value="yes">
+                <label for="y">Yes</label>
+                <input type="radio" name="inDanger" value="maybe">
+                <label for="m">Maybe</label>
+                <input type="radio" name="inDanger" value="no">
+                <label for="n">No</label><br><br>
+
+                Additional Information or Comments:<br>
+                <textarea name="addInfo" maxlength="600"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+            
+        </main>
+        <footer>
+            <div class= contact>
+                <p>copyright 2019 and stuff</p>
+                
+                
+            </div>
+            <p id="date"></p>
+        </footer>
+        
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+
+    </body>
+</html>
