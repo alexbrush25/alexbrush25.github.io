@@ -27,12 +27,24 @@ header h1{
 }
 
 
+.summary{
+    display: flex;
+    justify-content: center;
+}
+
+.summary p{
+    padding: 5px;
+}
+
+
 nav{
     display: flex;
     justify-content: center;
     flex-direction: row;
     width: 100%;
 }
+
+
 
 nav button{
     display: none;
@@ -102,8 +114,11 @@ main picture.hero img{
 
 
 .article{
-    margin: 5px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
     padding: 5px;
+    margin: 5px;
 }
 
 
@@ -135,6 +150,7 @@ form{
 .townpanels sectionfish{
     margin: 2em;
     text-align: center;
+    width: 200px;
 }
 .townpanels sectionfish h2{
     margin: .5em;
@@ -144,6 +160,7 @@ form{
 .townpanels sectionpreston{
     margin: 2em;
     text-align: center;
+    width: 200px;
 }
 .townpanels sectionpreston h2{
     margin: .5em;
@@ -153,6 +170,7 @@ form{
 .townpanels sectionsoda{
     margin: 2em;
     text-align: center;
+    width: 200px;
 }
 .townpanels sectionsoda h2{
     margin: .5em;
