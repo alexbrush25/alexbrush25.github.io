@@ -154,3 +154,42 @@ form{
 .townpanels sectionsoda h2{
     margin: .5em;
 }
+
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary #summaryTitle{
+    font-size: 25px;
+}
+
+.summary p{
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+
+.summary .fiveday table{
+    border-collapse: collapse;
+    text-align: center;
+    align-content: center;
+}
+
+.summary .fiveday table th{
+    font-size: 25px;
+}
+
+.summary .fiveday table td{
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.summary .fiveday table tr:nth-child(1){
+    background-color: #4169e1;
+    color: aliceblue;
+}
