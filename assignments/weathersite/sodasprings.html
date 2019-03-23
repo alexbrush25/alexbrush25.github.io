@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum scale=1">
+        
+        <title>Weathario</title>
+        
+        <meta name="description" content="Preston town page and weather service.">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" media="(max-width: 640px)" href="css/small.css">
+        <link rel="stylesheet" media="(min-width: 641px)" href="css/large.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Weathario</h1>
+            <img src="images/weathario-logo.png" alt="Weathario Logo">
+            <div class= motto>Now you're a Weather Wizard!</div>
+        </header>
+        <main>
+            
+            <nav>
+
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a class="active" href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    
+                </ul>
+
+            </nav>
+            
+            <picture class="hero">
+                <source media="(max-width: 640px)" srcset="images/posheroimg.jpg">
+                <source media="(min-width: 641px)" srcset="images/polheroimg.jpg">
+                <img src="images/polheroimg.jpg" alt="preston landscape">
+            </picture>
+            
+            <section class= summary>
+                
+                <p><span id="summaryTitle"><b>Weather Summary</b></span><br>
+                    <em>Currently</em>: <span id="status"></span><br>
+                    <em>High</em>: <span id="high"></span>&deg; F<br>
+                    <em>Wind Chill</em>: <span id="windchill"></span>&deg; F<br>
+                    <em>Humidity</em>: <span id="humidity"></span>%<br>
+                    <em>Wind Speed</em>: <span id="windspeed"></span> mph</p>
+
+                <div class= fiveday>
+                
+                        <table>
+                        <thead>
+                            <th colspan="5">5 Day Forecast</th>
+                        </thead>
+        
+                        <tbody>
+                            <tr>
+                                <td><span id="day1"></span></td>
+                                <td><span id="day2"></span></td>
+                                <td><span id="day3"></span></td>
+                                <td><span id="day4"></span></td>
+                                <td><span id="day5"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img id="img1" src="" alt=""><br><span id="temp1">&deg; F</span></td>
+                                <td><img id="img2" src="" alt=""><br><span id="temp2">&deg; F</span></td>
+                                <td><img id="img3" src="" alt=""><br><span id="temp3">&deg; F</span></td>
+                                <td><img id="img4" src="" alt=""><br><span id="temp4">&deg; F</span></td>
+                                <td><img id="img5" src="" alt=""><br><span id="temp5">&deg; F</span></td>
+                            </tr>
+                        </tbody>
+                        </table>
+        
+                    </div>
+
+            </section>
+            
+            <article class="upcomingevents">
+                <h2>Upcoming Events</h2>
+                <ul></ul>
+            </article>
+
+            <section class= article>
+                <h2>Thunderstorms More Prevelant?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                    in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <img src="images/lightningtown.jpg" alt="storm over town">
+            </section>
+            
+        </main>
+        <footer>
+            <div class= contact>
+                
+                <p>Copyright 2019. Powered by <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
+            
+            </div>
+            <p id="date"></p>
+        </footer>
+        
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/sodaweather.js"></script>
+        <script src="scripts/sodaforecast.js"></script>
+        <script src="scripts/sodaevents.js"></script>
+
+    </body>
+</html>

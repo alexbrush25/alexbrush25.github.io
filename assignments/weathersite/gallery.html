@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum scale=1">
+        
+        <title>Weathario</title>
+        
+        <meta name="description" content="Preston town page and weather service.">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" media="(max-width: 640px)" href="css/small.css">
+        <link rel="stylesheet" media="(min-width: 641px)" href="css/medium.css">
+        <link rel="stylesheet" media="(min-width: 1101px)" href="css/large.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Weathario Gallery</h1>
+        </header>
+        <main>
+            
+            <nav>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a class="active" href="gallery.html">Gallery</a></li>
+
+                </ul>
+            </nav>
+            
+            <div class="gallery">
+
+                <figure>
+                    <img src="images/snowmen.jpg" alt="Snowmen holding hands">
+                    <figcaption>Snowmen holding hands. Stay warm together!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/snowwalk.jpg" alt="Girl walking dog in winter">
+                    <figcaption>Dave, 12, captured this image for a school contest.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/storm-cloud.jpg" alt="Spring storm">
+                    <figcaption>First storm of spring 2009.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lightningtown.jpg" alt="lightning over the town">
+                    <figcaption>Large thunderstorm over Soda Springs.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rainbow.jpg" alt="Summer rainbow">
+                    <figcaption>Summer rainbow takes the rain away.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lowclouds.jpg" alt="Early fall storm">
+                    <figcaption>Clouds rolling low in early fall.</figcaption>
+                </figure>
+
+            </div>
+            
+        </main>
+        <footer>
+            <div class= contact> 
+                <p>Copyright 2019. Powered by <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
+            </div>
+            <p id="date"></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+
+    </body>
+</html>

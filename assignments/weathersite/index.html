@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum scale=1">
+        
+        <title>Weathario</title>
+        
+        <meta name="description" content="Preston town page and weather service.">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" media="(max-width: 640px)" href="css/small.css">
+        <link rel="stylesheet" media="(min-width: 641px)" href="css/large.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Weathario</h1>
+            <img src="images/weathario-logo.png" alt="Weathario Logo">
+            <div class= motto>Now you're a Weather Wizard!</div>
+        </header>
+        <main>
+            
+            <nav>
+
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    
+                </ul>
+
+            </nav>
+            
+            
+            <section class= townpanels>
+                <sectionfish><img src="images/rainbow.jpg" alt="rainbow"></sectionfish>
+                <sectionpreston><img src="images/snowmen.jpg" alt="snowmen"></sectionpreston>
+                <sectionsoda><img src="images/lowclouds.jpg" alt="cloudy day"></sectionsoda>
+            </section>
+            
+            
+        </main>
+        <footer>
+            <div class= contact>
+                <p>copyright 2019 and stuff</p>
+                
+                
+            </div>
+            <p id="date"></p>
+        </footer>
+        
+        <script src="scripts/towninfo.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        
+
+    </body>
+</html>
