@@ -2,7 +2,7 @@
 let templeRequest = new XMLHttpRequest();
 
 //sets up json save point
-let templeURLstring = "scripts/jsons/temple.json";
+let templeURLstring = "https://alexbrush25.github.io/assignments/finaltermsite/scripts/jsons/temple.json";
 
 //sends the link request
 templeRequest.open('GET', templeURLstring, true);
