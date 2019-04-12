@@ -10,15 +10,15 @@
         
         <link href="https://fonts.googleapis.com/css?family=Cinzel|Indie+Flower|Raleway" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" media="(max-width: 490px)" href="css/small.css">
-        <link rel="stylesheet" media="(min-width: 491px)" href="css/medium.css">
-        <link rel="stylesheet" media="(min-width: 961px)" href="css/large.css">
+        <link rel="stylesheet" media="(max-width: 785px)" href="css/small.css">
+        <link rel="stylesheet" media="(min-width: 786px)" href="css/medium.css">
+        <link rel="stylesheet" media="(min-width: 1400px)" href="css/large.css">
         
     </head>
     <body>
         <header>
-            <h1>Temple Inn and Suites</h1>
-            <img src="LOGO SRC" alt="Temple Inn & Suites Logo">
+            <img src="images/tinslogo.jpg" alt="Temple Inn & Suites Logo">
+            <h1>Temple Inn & Suites</h1>
             <div class= slogan>"Rest on Heaven's doorstep."</div>
         </header>
         <main>
@@ -38,16 +38,47 @@
 
             </nav>
              
+            <div class="contact">
+                <div class="info">
+                    <p>Headquarters:<br>4800 Montgomery Ln #300<br>Bethesda, MD 20814<br><br></p>
+                    <p>Phone:<br>(555) 666-7777<br><br></p>
+                    <p>Email:<br>templeinn@suites.com</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370285545!2d-77.09772048440894!3d38.98325594948323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1555025649006!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <form class="contactform" onsubmit="alertBox()">
+                
+                First Name:<br>
+                <input type="text" name="firstname" pattern="[A-Za-z]*" minlength="4" required><br><br>
+
+                Last Name:<br>
+                <input type="text" name="lastname" pattern="[A-Za-z]*" minlength="4" required><br><br>
+
+                Email:<br>
+                <input type="email" name="email" placeholder="email123@mail.com" required><br><br>
+
+                Ask your question here:<br>
+                <textarea name="addInfo" maxlength="600"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
         </main>
         <footer>
 
             <div class= copyright>
-                <p>Copyright 2019 Temple Inn & Suites | All rights reserved | Weather services powerd by <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
+                <p>Copyright 2019 Temple Inn & Suites | All rights reserved | Weather services powered by <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
             </div>
 
         </footer>
         
         <script src="scripts/hamburger.js"></script>
+        <script>
+            function alertBox(){
+                alert("Thank you for contacting us! We will get back with you as soon as possible.");
+            }
+        </script>
         
     </body>
 </html>

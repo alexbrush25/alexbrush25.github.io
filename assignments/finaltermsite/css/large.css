@@ -1,4 +1,8 @@
-/* color: #4169E1 #A9A9A9 #6495ED #778899 */
+/* 
+font-family: 'Cinzel', serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Raleway', sans-serif;
+*/
 
 *{
     margin: 0;
@@ -7,25 +11,33 @@
 
 header{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     width: 100%;
-    background: #4169e1;
 }
 
+header img{
+    margin: 10px;
+    border-radius: 20px;
+}
 
 header h1{
-    top: 20px;
-    color: #ffffff;
+    font-size: 70px;
+    font-family: 'Cinzel', serif;
+}
+
+.slogan{
+    position: absolute;
+    right: 20%;
+    top: 150px;
+    font-size: 32px;
+    font-family: 'Indie Flower', cursive;
 }
 
 
-
-.motto{
-    bottom: 1px;
-    color: #A9A9A9;
+main{
+    font-family: 'Raleway', sans-serif;
 }
-
 
 
 nav{
@@ -33,9 +45,9 @@ nav{
     justify-content: center;
     flex-direction: row;
     width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
-
-
 
 nav button{
     display: none;
@@ -46,7 +58,7 @@ nav ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #6495ED;
+    
 }
 
 nav ul.hide{
@@ -55,187 +67,125 @@ nav ul.hide{
 
 nav li{
     float: left;
-    border-right: 1px black;
+    border-right: 1px solid #e0e2e2;
 }
 
+nav li:nth-child(1){
+    border-left: 1px solid #e0e2e2;
+}
 
 nav li a{
     display: block;
-    color: lightblue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: black;
 }
-
 
 nav li a:hover{
     color: black;
-    background: lightblue;
+    background: #bdc0c0;
 }
 
-
 nav li a.active{
-    background: aqua;
+    background: #e0e2e2;
     color: black;    
 }
 
 
 
-
-main .gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
+.action{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-.gallery img{
-    width: 400px;
+.quickcontact{
+    font-size: 20px;
+    margin: 20px;
+}
+.quickreserve{
+    font-size: 20px;
+    margin: 20px;
 }
 
 
 
-
-main picture.hero img{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: auto;
+.summary{
+    position: relative;
+    margin-left: 55%;
+    margin-right: 21%;
+    padding: 10px;
+    bottom: 400px;
 }
 
+.summaryimg{
+    width: 350px;
+    height: auto;
+    margin-left: 32%;
+    margin-top: 40px;
+}
+
+.summary p{
+    margin: 12px;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-right: 20%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.reserveform input{
+    width: 250px;
+}
+.reserveform select{
+    width: 250px;
+}
+.reserveform textarea{
+    height: 100px;
+}
+.thank{
+    display: flex;
+    justify-content: center;
+    margin: 25%;
+}
 
 
 
 .contact{
-    margin: 5px;
-    padding: 5px;
-}
-
-
-form{
-    margin: 10px;
-    padding: 5px;
-}
-
-
-#thanks{
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
-}
-
-
-.townpanels{
     display: flex;
     justify-content: space-evenly;
-}
-
-
-.townpanels sectionfish{
-    margin: 2em;
-    text-align: center;
-    width: 200px;
-}
-.townpanels sectionfish h2{
-    margin: .5em;
-}
-
-
-.townpanels sectionpreston{
-    margin: 2em;
-    text-align: center;
-    width: 200px;
-}
-.townpanels sectionpreston h2{
-    margin: .5em;
-}
-
-
-.townpanels sectionsoda{
-    margin: 2em;
-    text-align: center;
-    width: 200px;
-}
-.townpanels sectionsoda h2{
-    margin: .5em;
-}
-
-
-.summary{
-    display: flex;
-    justify-content: space-around;
-}
-
-.summary #summaryTitle{
-    font-size: 25px;
-}
-
-.summary p{
-    font-size: 20px;
-    padding: 2px;
-}
-
-
-
-.summary .fiveday table{
-    border-collapse: collapse;
-    text-align: center;
-    align-content: center;
-}
-
-.summary .fiveday table th{
-    font-size: 25px;
-}
-
-.summary .fiveday table td{
-    border: 1px solid black;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.summary .fiveday table tr:nth-child(1){
-    background-color: #4169e1;
-    color: aliceblue;
-}
-
-
-
-
-article{
-    display: flex;
-    flex-direction: column;
-}
-
-
-sectionpreston img{
-    width: 220px;
-}
-
-sectionsoda img{
-    width: 220px;
-}
-
-
-
-
-.article{
-    width: 60%;
-    padding: 5px;
-    margin: 5px;
-}
-
-.article img{
-    position: relative;
-    left: 100%;
-    bottom: 100px;
-    width: 60%;
-}
-
-
-.upcomingevents{
-    padding: 10px;
     margin: 20px;
 }
+
+.contact .info{
+    margin: 5%;
+    font-size: 20px;
+}
+
+.contactform{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.contactform textarea{
+    height: 100px;
+}
+.contactform input{
+    width: 250px;
+}
+
 
 
 footer{
@@ -243,9 +193,10 @@ footer{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: #4169e1;
-    color: #ffffff;
+    background: #bdc0c0;
+    color: black;
     font-size: 12px;
+    font-family: 'Raleway', sans-serif;
 }
 
 footer p{

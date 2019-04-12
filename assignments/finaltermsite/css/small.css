@@ -1,4 +1,8 @@
-/* color: #4169E1 #A9A9A9 #6495ED #778899 */
+/* 
+font-family: 'Cinzel', serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Raleway', sans-serif;
+*/
 
 *{
     margin: 0;
@@ -9,22 +13,30 @@ header{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: #4169e1;
-}
-
-header h1{
-    color: #ffffff;
-}
-
-header .motto{
-    color: #A9A9A9;
-    margin: 3px;
 }
 
 header img{
     width: 50%;
+    margin-top: 15px;
+    border-radius: 20px;
 }
 
+header h1{
+    font-size: 40px;
+    font-family: 'Cinzel', serif;
+}
+
+header .slogan{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+
+main{
+    font-family: 'Raleway', sans-serif;
+}
 
 
 
@@ -32,7 +44,8 @@ nav{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: #6495ED;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 nav button{
@@ -44,7 +57,7 @@ nav button{
 
 nav button:hover{
     color: black;
-    background: lightblue;
+    background: #bdc0c0;
 }
 
 nav ul{
@@ -58,9 +71,13 @@ nav ul.hide{
     display: none;
 }
 
+nav li{
+    border-top: 1px solid #e0e2e2;
+}
+
 nav li a{
     display: block;
-    color: lightblue;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -68,155 +85,116 @@ nav li a{
 
 nav li a:hover{
     color: black;
-    background: lightblue;
+    background: #bdc0c0;
 }
 
 nav li a.active{
-    background: aqua;
+    background: #e0e2e2;
     color: black;    
 }
 
 
 
-
-main .gallery{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3%;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-.gallery img{
-    width: 400px;
-}
-
-
-
-main picture.hero img{
-    width: 100%;
-}
-
-
-.contact{
-    margin: 5px;
-    padding: 5px;
-}
-
-
-form{
-    margin: 10px;
-    padding: 5px;
-}
-
-#thanks{
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
-}
-
-
-.townpanels{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-
-.townpanels sectionfish{
-    margin: 2em;
-    text-align: center;
-}
-.townpanels sectionfish h2{
-    margin: .5em;
-}
-
-
-.townpanels sectionpreston{
-    margin: 2em;
-    text-align: center;
-}
-.townpanels sectionpreston h2{
-    margin: .5em;
-}
-
-
-.townpanels sectionsoda{
-    margin: 2em;
-    text-align: center;
-}
-.townpanels sectionsoda h2{
-    margin: .5em;
-}
-
-
-.summary{
+.action{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-.summary #summaryTitle{
-    font-size: 25px;
+.actionbar{
+    margin-top: 30px;
 }
 
-.summary p{
+.quickcontact{
     font-size: 20px;
-    padding: 5px;
-}
-
-
-
-.summary .fiveday table{
-    border-collapse: collapse;
-    text-align: center;
-    align-content: center;
-}
-
-.summary .fiveday table th{
-    font-size: 25px;
-}
-
-.summary .fiveday table td{
-    border: 1px solid black;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.summary .fiveday table tr:nth-child(1){
-    background-color: #4169e1;
-    color: aliceblue;
-}
-
-
-sectionpreston img{
-    width: 220px;
-}
-
-sectionsoda img{
-    width: 220px;
-}
-
-
-
-.article{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 60%;
-    padding: 5px;
-    margin: 5px;
-}
-
-.article img{
-    width: 100%;
-}
-
-
-.upcomingevents{
-    padding: 10px;
     margin: 20px;
 }
+.quickreserve{
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+
+.summary{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.summaryimg{
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 40px;
+}
+
+.summary h2{
+    text-align: center;
+}
+.summary p{
+    margin: 12px;
+}
+
+
+
+.reserveform{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.reserveform input{
+    width: 250px;
+}
+.reserveform select{
+    width: 250px;
+}
+.reserveform textarea{
+    height: 100px;
+}
+.thank{
+    display: flex;
+    justify-content: center;
+    margin: 25%;
+}
+
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.contact .info{
+    margin: 5%;
+    font-size: 20px;
+}
+
+.contactform{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20%;
+    margin-right: 30%;
+}
+.contactform textarea{
+    height: 100px;
+}
+.contactform input{
+    width: 250px;
+}
+
 
 
 footer{
@@ -224,13 +202,15 @@ footer{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: #4169e1;
-    color: #ffffff;
+    background: #bdc0c0;
+    color: black;
     font-size: 12px;
+    font-family: 'Raleway', sans-serif;
 }
 
 footer p{
     padding: 5px;
+    text-align: center;
 }
 
 footer #date{
