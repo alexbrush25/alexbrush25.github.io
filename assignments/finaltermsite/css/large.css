@@ -94,6 +94,27 @@ nav li a.active{
 
 
 
+.homeintro{
+    margin: 40px;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+}
+.homeintro h2{
+    text-align: center;
+    padding: 15px;
+}
+.homeintro p{
+    font-size: 20px;
+}
+
+.templeshow{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+
+
 .action{
     display: flex;
     justify-content: space-evenly;
@@ -184,6 +205,11 @@ form{
 }
 .contactform input{
     width: 250px;
+}
+
+iframe{
+    width: 600px;
+    height: 500px;
 }
 
 
