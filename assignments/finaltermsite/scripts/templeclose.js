@@ -12,19 +12,37 @@ templeRequest.send();
 templeRequest.onload = function(){
     //parses the json into workable string
     let templeData = JSON.parse(templeRequest.responseText);
-    console.log(templeData);
-/*
-    var eventsList = document.querySelector('article');
+    //console.log(templeData);
 
-    for (var i = 0; i < eventData.towns[4].events.length; i++){
-        var eventList = document.createElement('li');
-        eventList.textContent = eventData.towns[4].events[i];
-        eventsList.appendChild(eventList);
+
+    for (var t = 0; t < templeData.temples.length; t++){
+        var templesList;
+        switch (t){
+            case 0: 
+                templesList = document.querySelector('.closedone');
+                break;
+            case 1: 
+                templesList = document.querySelector('.closedtwo');
+                break;
+            case 2:
+                templesList = document.querySelector('.closedthree');
+                break;
+            case 3:
+                templesList = document.querySelector('.closedfour');
+                break;
+            default:
+                break;
+        }
+
+        for (var i = 0; i < templeData.temples[t].closed.length; i++){
+            var templeList = document.createElement('li');
+            templeList.textContent = templeData.temples[t].closed[i];
+            templesList.appendChild(templeList);
+        }
+        if (templeData.temples[t].closed.length == 0){
+            var templeList = document.createElement('li');
+            templeList.textContent = "No closures this year.";
+            templesList.appendChild(templeList);
+        }
     }
-    if (eventData.towns[4].events.length == 0){
-        var eventList = document.createElement('li');
-        eventList.textContent = "No upcoming events announced yet. Check again tomorrow!";
-        eventsList.appendChild(eventList);
-    }
-*/
 }

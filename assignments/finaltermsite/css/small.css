@@ -197,6 +197,212 @@ nav li a.active{
 
 
 
+.spotlight{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 5%;
+}
+.spotlight .templeimg{
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.spotlight h2{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.spotlight .spotone{
+    margin: 2.5%;
+}
+.spotlight .spotone p{
+    margin: 4px;
+}
+.spotlight .spotone .templeimg{
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.spotlight .spottwo{
+    margin: 2.5%;
+}
+.spotlight .spottwo p{
+    margin: 4px;
+}
+.spotlight .spotthree{
+    margin: 2.5%;
+}
+.spotlight .spotthree p{
+    margin: 4px;
+}
+.spotlight .spotfour{
+    margin: 2.5%;
+}
+.spotlight .spotfour p{
+    margin: 4px;
+}
+
+
+.serviceintro{
+    margin: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.serviceintro h2{
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+.serviceintro p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.amenities{
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+}
+.amenityimg{
+    display: flex;
+    flex-direction: column;
+}
+.amenityimg img{
+    padding: 10px;
+}
+
+.amenityword{
+    display: flex;
+    flex-direction: column;
+}
+.amenityword h3{
+    font-size: 25px;
+    text-align: center;
+}
+.amenityword ul{
+    list-style-type: none;
+    font-size: 20px;
+    margin: 15px;
+}
+.amenityword li{
+    padding: 4px;
+}
+
+
+
+.specialservices{
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.serviceimg img{
+    width: 60%;
+    height: auto;
+    padding: 20px;
+}
+
+.serviceword{
+    display: flex;
+    flex-direction: column;
+}
+.serviceword h3{
+    font-size: 25px;
+    text-align: center;
+}
+.serviceword h4{
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+.serviceword ul{
+    list-style-type: none;
+    font-size: 20px;
+    margin: 15px;
+}
+.serviceword li{
+    padding: 15px;
+}
+
+
+.serviceout{
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+.fullintro{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.fullword{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.fullword p{
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+.fullimg img{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.fullcontact{
+    text-align: center;
+    margin: 20px;
+}
+.fullform{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 40px;
+}
+
+
+
+.receptintro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    text-align: center;
+}
+.receptintro h2{
+    margin: 20px;
+}
+.receptintro h3{
+    margin: 10px;
+    margin-top: 70px;
+}
+.receptintro p{
+    margin: 5px;
+}
+.receptintro img{
+    margin: 5px;
+}
+
+.receptout{
+    margin: 55px;
+}
+
+
+
 footer{
     display: flex;
     flex-direction: column;
